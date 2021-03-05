@@ -39,7 +39,7 @@
 					<div class="action"></div>
 				</div>
 			</header>
-			<section class="inner-page">
+			<section class="inner-page lk-page">
 				<div class="container">
 					<div class="barni-cute desktop-visible"></div>
 					<div class="barni-cool desktop-visible"></div>
@@ -65,6 +65,9 @@
 					<div class="lk-title">Мои чеки и призы</div>
 					<div class="checks-wrapper">
 						<div class="check">
+							<div class="check-announce">Здесь будут появляться твои чеки и призы. <br class="desktop-visible">Для этого загружай фото чеков с двумя любыми упаковками Барни.</div>
+						</div>
+						<div class="check">
 							<div class="check-preview">
 								<img src="img/check.png" alt="">
 							</div>
@@ -79,7 +82,9 @@
 								</div>
 								<div class="check-info-col prize">
 									<div class="check-info-label">Приз</div>
-									<div class="check-info-text">...</div>
+									<div class="check-info-text-wrapper">
+										<div class="check-info-text">...</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -98,8 +103,10 @@
 								</div>
 								<div class="check-info-col prize">
 									<div class="check-info-label">Приз</div>
-									<div class="check-info-text">300 баллов</div>
-									<a href="#!" class="check-info-prize-link link pop-op" data-popup="reg-card">Добавить карту</a>
+									<div class="check-info-text-wrapper">
+										<div class="check-info-text">300 баллов</div>
+										<a href="#!" class="check-info-prize-link link pop-op" data-popup="reg-card">Добавить карту</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -118,8 +125,10 @@
 								</div>
 								<div class="check-info-col prize">
 									<div class="check-info-label">Приз</div>
-									<div class="check-info-text">Мишка Барни</div>
-									<a href="#!" class="check-info-prize-link link pop-op" data-popup="reg-card">Получить</a>
+									<div class="check-info-text-wrapper">
+										<div class="check-info-text">Мишка Барни</div>
+										<a href="#!" class="check-info-prize-link link pop-op" data-popup="get-prize">Получить</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -138,7 +147,9 @@
 								</div>
 								<div class="check-info-col prize">
 									<div class="check-info-label">Приз</div>
-									<div class="check-info-text">...</div>
+									<div class="check-info-text-wrapper">
+										<div class="check-info-text">...</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -337,7 +348,7 @@
                 <div class="popup__inner">
                     <div class="popup__title">Загрузка чека</div>
                     <div class="iframe-wrap">
-                        <iframe src="https://checkservice.emg.ru/Upload?id=82061432-7b19-45a2-b91f-b3a8274bc58e&participantId=1&hash=3047174e37d61be668c1ed7963e0eb13" class="iframe" frameborder="0"></iframe>
+                        <iframe src="https://checkservice.emg.ru/Upload?id=6f51d479-c1d0-4e49-9f2c-5c5966320bab&participantId=2&hash=25a60f6565bd136552a008417ff3305d" class="iframe" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -358,6 +369,100 @@
                 </div>
             </div>
 		</div>
+		<div id="get-prize" class="popup">
+	        <div class="popup__wrap">
+	            <a href="#!" class="close-popup js-close-popup">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.388 3.56723C16.204 2.75117 16.204 1.4281 15.388 0.612042C14.5719 -0.20402 13.2488 -0.204008 12.4328 0.612042L8 5.04482L3.56723 0.612042C2.75116 -0.20402 1.42809 -0.204008 0.612042 0.612042C-0.204008 1.42809 -0.20402 2.75116 0.612042 3.56723L5.04482 8L0.612042 12.4328C-0.204008 13.2488 -0.20402 14.5719 0.612042 15.388C1.4281 16.204 2.75117 16.204 3.56723 15.388L8 10.9552L12.4328 15.388C13.2488 16.204 14.5719 16.204 15.388 15.388C16.204 14.5719 16.204 13.2488 15.388 12.4328L10.9552 8L15.388 3.56723Z" fill="#2EC5F4"/>
+					</svg>
+				</a>
+	            <div class="popup__inner">
+	                <div class="popup__title">Получение приза</div>
+	                <div class="popup__desc">Оставьте ваш адрес <br>для получения приза</div>
+	                <form class="popup-form">
+	                    <div class="input-field">
+	                        <input type="text" name="firstName" placeholder="Имя" value="Константин" required>
+	                    </div>
+	                    <div class="input-field">
+	                        <input type="text" name="patronymic" placeholder="Отчество" value="Аристархович" required>
+	                    </div>
+	                    <div class="input-field">
+	                        <input type="text" name="lastName" placeholder="Фамилия" value="Константинопольский" required>
+	                    </div>
+	                    <div class="input-field mb20">
+	                        <input type="text" name="phone" class="phone-mask" placeholder="Номер телефона" value="+79999999999" required>                           
+	                    </div>
+	                    <div class="input-field">
+                    		<div class="select">
+								<select name="region" class="select-search" data-placeholder="Регион" required>
+									<option value=""></option>
+									<option value="1">Приз 1 Приз 1 Приз 1 Приз 1 Приз 1 Приз 1 Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<div class="select">
+								<select name="city" class="select-search" data-placeholder="Населенный пункт" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+						<div class="input-field">
+                    		<div class="select">
+								<select name="street" class="select-search" data-placeholder="Улица" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+	                    <div class="input-drop mb30">
+	                    	<div class="input-field">
+	                    		<div class="select">
+									<select name="building" class="select-search" data-placeholder="Дом" required>
+										<option value=""></option>
+										<option value="1">Приз 1</option>
+										<option value="2">Приз 2</option>
+										<option value="3">приз 3</option>
+									</select>
+								</div>
+	                    	</div>
+	                        <div class="input-field">
+	                            <input class="" name="flat" placeholder="Квартира" value="" required>
+	                        </div>
+	                    </div>
+	                    <div class="btn-wrapper">
+	                        <!-- <button class="btn"><span>Отправить</span></button> -->
+	                        <a href="#!" class="btn pop-op" data-popup="get-prize-confirm"><span>Отправить</span></a>
+	                    </div>
+	                </form>
+	            </div>
+	        </div>
+	    </div>
+	    <div id="get-prize-confirm" class="popup">
+	        <div class="popup__wrap">
+	            <a href="#!" class="close-popup js-close-popup">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.388 3.56723C16.204 2.75117 16.204 1.4281 15.388 0.612042C14.5719 -0.20402 13.2488 -0.204008 12.4328 0.612042L8 5.04482L3.56723 0.612042C2.75116 -0.20402 1.42809 -0.204008 0.612042 0.612042C-0.204008 1.42809 -0.20402 2.75116 0.612042 3.56723L5.04482 8L0.612042 12.4328C-0.204008 13.2488 -0.20402 14.5719 0.612042 15.388C1.4281 16.204 2.75117 16.204 3.56723 15.388L8 10.9552L12.4328 15.388C13.2488 16.204 14.5719 16.204 15.388 15.388C16.204 14.5719 16.204 13.2488 15.388 12.4328L10.9552 8L15.388 3.56723Z" fill="#2EC5F4"/>
+					</svg>
+				</a>
+	            <div class="popup__inner">
+	                <div class="popup__title">Спасибо</div>
+	                <div class="popup__desc">Ваш приз будет отправлен по адресу:</div>
+	                <div class="popup__text delivery-address">123456, Свердловская область, г. Карпинск, ул. Макарова, д. 18, к. 2, кв. 18</div>
+	                <div class="btn-wrapper mb20">
+	                    <a href="#!" class="btn"><span>Подтвердить</span></a>
+	                </div>
+	                <a href="#!" class="link">Назад</a>
+	            </div>
+	        </div>
+	    </div>
 	</div>
 
 	<script src="libs/jquery-3.5.1.min.js"></script>
