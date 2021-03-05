@@ -62,6 +62,7 @@ $(document).ready(function () {
 
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
+    $('.checks-wrapper').scrollbar();
     if(window.innerWidth < 1000) {
         $('.products-list').scrollbar();
     }
