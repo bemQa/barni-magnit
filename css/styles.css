@@ -2174,7 +2174,8 @@ table td:nth-child(3) {
     height: 30px;
     background: url(../img/barnimeter/round-light.svg) center no-repeat;
     background-size: contain;
-    animation: 1s round-light infinite ease-out;
+    animation: 2s round-light infinite ease-out;
+    opacity: 0;
 }
 
 .round1 {
@@ -2194,6 +2195,89 @@ table td:nth-child(3) {
     animation-delay: .6s;
 }
 
+.round4 {
+    bottom: 183px;
+    left: -570px;
+    animation-delay: .9s;
+}
+
+.round5 {
+    bottom: 235px;
+    left: -482px;
+    animation-delay: 1.2s;
+}
+
+.round6 {
+    bottom: 277px;
+    left: -378px;
+    animation-delay: 1.5s;
+}
+
+.round7 {
+    bottom: 309px;
+    left: -259px;
+    animation-delay: 1.8s;
+}
+
+.round8 {
+    bottom: 328px;
+    left: -128px;
+    animation-delay: 2.1s;
+}
+
+.round9 {
+    bottom: 334px;
+    right: -6px;
+    animation-delay: 2.4s;
+}
+
+.round10 {
+    bottom: 327px;
+    right: -139px;
+    animation-delay: 2.7s;
+}
+
+.round11 {
+    bottom: 307px;
+    right: -268px;
+    animation-delay: 3s;
+}
+
+.round12 {
+    bottom: 275px;
+    right: -386px;
+    animation-delay: 3.3s;
+}
+
+.round13 {
+    bottom: 232px;
+    right: -490px;
+    animation-delay: 3.6s;
+}
+
+.round14 {
+    bottom: 177px;
+    right: -577px;
+    animation-delay: 3.9s;
+}
+
+.round15 {
+    bottom: 118px;
+    right: -638px;
+    animation-delay: 4.2s;
+}
+
+.round16 {
+    bottom: 53px;
+    right: -677px;
+    animation-delay: 4.5s;
+}
+
+.round17 {
+    bottom: -14px;
+    right: -689px;
+    animation-delay: 4.8s;
+}
 
 @keyframes round-light {
     0% {
