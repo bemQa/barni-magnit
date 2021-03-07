@@ -202,4 +202,24 @@ $(document).ready(function () {
         });
     }
     openAccordion();
+
+    // анимации барниметр
+    $(".cute-side").mouseover(function() {
+        $(".cool").removeClass('active');
+        $(".cute").addClass('active');
+    });
+    $(".cool-side").mouseover(function() {
+        $(".cute").removeClass('active');
+        $(".cool").addClass('active');
+    });
+    $(".cute-side, .cool-side").mouseleave(function() {
+        $(".cool, .cute").removeClass('active');
+    });
+    // клики барниметр
+    $(".cute-side").click(function() {
+        OpenPopup('cute');
+    });
+    $(".cool-side").click(function() {
+        OpenPopup('cool');
+    });
 });

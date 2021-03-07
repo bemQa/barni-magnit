@@ -1796,149 +1796,512 @@ table td:nth-child(3) {
     margin: 150px 0 200px;
 }
 
-
-
-
-
 .main-block {
     position: relative;
-    padding-bottom: 75px;
+    min-height: 400px;
 }
 
 .main-block::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: -100px;
     left: 0;
     right: 0;
     width: 100%;
-    height: 557px;
-    background: url(../img/grass.png) center 0 no-repeat;
-    background-size: cover;
-    z-index: 1;
+    height: 723px;
+    background: url(../img/bg-main.png) right 0 no-repeat;
+    background-size: 66%;
+    z-index: 0;
 }
 
-.barni-block {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
+.kv {
+    position: absolute;
+    top: -40px;
+    left: -100px;
+    right: 0;
+    width: 629px;
+    height: 774px;
+    margin: auto;
 }
 
-.barni {
-    position: relative;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    height: 430px;
-}
-
-.barni img {
+.kv-back {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto;
-    max-width: 451px;
-}
-
-.barni .bag {
-    position: absolute;
-    top: 297px;
-    left: 272px;
-    max-width: 209px;
-    z-index: 1;
-}
-
-.slogan {
-    max-width: 893px;
+    bottom: 0;
     width: 100%;
-    margin-top: 50px;
+    height: 100%;
+    background: url(../img/kv-back.png) center 0 no-repeat;
+    background-size: contain;
+}
+
+.kv-front {
+    position: absolute;
+    top: 316px;
+    left: 0;
+    right: -40px;
+    width: 498px;
+    height: 274px;
+    margin: auto;
+    background: url(../img/kv-front.png) center no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+
+.steps-block {
+    position: relative;
+    min-height: 394px;
+    padding: 10px 0;
+    background: url(../img/bg-steps.png) center 0 no-repeat;
+    background-size: 100% 100%;
 }
 
 .steps {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    z-index: 1;
+    justify-content: center;
+    margin: auto;
 }
 
 .step {
     position: relative;
+    margin: 0 30px;
+}
+
+.step1 {
+    width: 303px;
+    height: 309px;
+    background: url(../img/step1-bg.png) center no-repeat;
+    background-size: contain;
 }
 
 .step2 {
-    margin-right: 80px;
+    width: 273px;
+    height: 279px;
+    margin-top: 66px;
+    padding-top: 66px;
+    background: url(../img/step2-bg.png) center no-repeat;
+    background-size: contain;
 }
 
-.step-img {
-    position: relative;
-    display: flex;
-    -ms-align-items: flex-end;
-    align-items: flex-end;
-    justify-content: center;
-    min-height: 220px;
-    margin-bottom: 30px;
+.step3 {
+    width: 272px;
+    height: 276px;
+    background: url(../img/step3-bg.png) center no-repeat;
+    background-size: contain;
 }
 
 .step1 .step-img {
-    justify-content: flex-start;
-    margin-left: 50px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    margin: 3px auto 5px;
 }
 
-.step1 .step-img img {
+.step2 .step-img {
     position: absolute;
-    max-width: 215px;
-}
-
-.step2 .step-img img {
-    position: absolute;
-    max-width: 250px;
-}
-
-.step3 .step-img img {
-    position: absolute;
-    max-width: 440px;
-}
-
-.step-num {
-    position: absolute;
-    top: 150px;
+    bottom: -26px;
     left: 0;
+    right: -30px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    margin: auto;
+}
+
+.step3 .step-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    margin: 22px auto 10px;
+}
+
+.step3-main-prize {
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+    width: 272px;
+    margin: auto;
 }
 
 .step-title {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 27px;
+    font-size: 26px;
+    line-height: 28px;
     text-align: center;
-    color: #fff;
+    margin-bottom: 5px;
 }
 
-.step-title span {
-    color: #F8EB14;
+.step-text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
 }
 
-.remarks {
+.main-title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.main-subtitle {
+    font-size: 21px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 15px 0 40px;
+}
+
+.prizes-block {
+    position: relative;
+    min-height: 370px;
+    padding-top: 40px;
+    background: #5AAAEC;
+}
+
+.prizes-block::before {
+    content: '';
     position: absolute;
-    bottom: -50px;
-    font-size: 14px;
-    line-height: 16px;
-    color: #fff;
-    z-index: 1;
-}
-
-.remarks-left {
-    left: 15px;
-}
-
-.remarks-center {
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
+    width: 1306px;
+    height: 357px;
+    background: url(../img/bears-prizes.png) center no-repeat;
+    background-size: 1306px;
+}
+
+.prizes {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.prize {
+    position: relative;
+    margin: 0 auto;
+}
+
+.prize2 {
+    margin-top: 45px;
+}
+
+.prize-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.prize-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
     text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.prize-text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.barnimeter-block {
+    position: relative;
+    min-height: 668px;
+    padding-top: 160px;
+    background: url(../img/bg-barnimeter.png) center 0 no-repeat #5AAAEC;
+    background-size: 100% 100%;
+}
+
+.barnimeter-block .container {
+    min-height: 500px;
+}
+
+.star-cute {
+    position: absolute;
+    top: -35px;
+    left: -1300px;
+    right: 0;
+    margin: auto;
+    width: 275px;
+    height: 279px;
+    background: url(../img/barnimeter/star-cute-side.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.star-cute-center {
+    position: absolute;
+    top: 130px;
+    left: -700px;
+    right: 0;
+    margin: auto;
+    width: 112px;
+    height: 114px;
+    background: url(../img/barnimeter/star-center.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.main-barni-cute {
+    position: absolute;
+    top: 30px;
+    left: -1100px;
+    right: 0;
+    margin: auto;
+    width: 265px;
+    height: 445px;
+    background: url(../img/barnimeter/barni-cute.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.text-cute {
+    position: absolute;
+    top: 125px;
+    right: -80px;
+    width: 202px;
+    height: 160px;
+    background: url(../img/barnimeter/text-cute-side.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+    opacity: 0;
+    transform: scale(.8);
+}
+
+.star-cool {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    right: -1300px;
+    margin: auto;
+    width: 268px;
+    height: 281px;
+    background: url(../img/barnimeter/star-cool-side.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.star-cool-center {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: -640px;
+    margin: auto;
+    width: 112px;
+    height: 114px;
+    background: url(../img/barnimeter/star-center.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.main-barni-cool {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    right: -900px;
+    margin: auto;
+    width: 259px;
+    height: 370px;
+    background: url(../img/barnimeter/barni-cool.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.text-cool {
+    position: absolute;
+    top: 173px;
+    left: -24px;
+    width: 205px;
+    height: 159px;
+    background: url(../img/barnimeter/text-cool-side.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+    opacity: 0;
+    transform: scale(.8);
+}
+
+.active .star-cute,
+.active .star-cute-center,
+.active .star-cool,
+.active .star-cool-center {
+    transform: scale(1.2);
+}
+
+.active .main-barni-cute,
+.active .main-barni-cool {
+    transform: scale(1.1);
+}
+
+.active .text-cute,
+.active .text-cool {
+    opacity: 1;
+}
+
+.barnimeter {
+    position: absolute;
+    bottom: -10px;
+    left: -50px;
+    right: -50px;
+    margin: auto;
+    width: 1093px;
+    height: 584px;
+    background: url(../img/barnimeter/meter-base.png) center 0 no-repeat;
+    background-size: 1093px;
+}
+
+.round {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background: url(../img/barnimeter/round-light.svg) center no-repeat;
+    background-size: contain;
+    animation: 1s round-light infinite ease-out;
+}
+
+.round1 {
+    bottom: -8px;
+    left: -686px;
+}
+
+.round2 {
+    bottom: 59px;
+    left: -675px;
+    animation-delay: .3s;
+}
+
+.round3 {
+    bottom: 124px;
+    left: -635px;
+    animation-delay: .6s;
+}
+
+
+@keyframes round-light {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.cute-side {
+    position: absolute;
+    bottom: 0;
+    left: -328px;
+    right: 0;
+    margin: auto;
+    width: 328px;
+    height: 327px;
+    background: url(../img/barnimeter/cute-side.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.cute-side::after,
+.cool-side::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.cool-side {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -328px;
+    margin: auto;
+    width: 328px;
+    height: 327px;
+    background: url(../img/barnimeter/cool-side.png) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.barnimeter .arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -300px;
+    margin: auto;
+    width: 189px;
+    height: 600px;
+    background: url(../img/barnimeter/arrow.svg) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.barnimeter .pimpa {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 91px;
+    height: 57px;
+    background: url(../img/barnimeter/pimpa.svg) center no-repeat;
+    background-size: contain;
+}
+
+.cute-side:hover {
+    background: url(../img/barnimeter/cute-side-active.png) center no-repeat;
+    background-size: contain;
+}
+
+.cool-side:hover {
+    background: url(../img/barnimeter/cool-side-active.png) center no-repeat;
+    background-size: contain;
+}
+
+.cute-side:hover ~ .arrow {
+    transform: rotate(-30deg);
+}
+
+.cool-side:hover ~ .arrow {
+    transform: rotate(30deg);
+}
+
+.barni-popup .popup__inner {
+    padding: 60px 20px 30px;
+}
+
+.barni-popup-img {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .error-block {
