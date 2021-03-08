@@ -2026,10 +2026,11 @@ table td:nth-child(3) {
     padding-top: 160px;
     background: url(../img/bg-barnimeter.png) center 0 no-repeat #5AAAEC;
     background-size: 100% 100%;
+    overflow: hidden;
 }
 
 .barnimeter-block .container {
-    min-height: 500px;
+    height: 500px;
 }
 
 .star-cute {
@@ -2163,6 +2164,7 @@ table td:nth-child(3) {
     height: 584px;
     background: url(../img/barnimeter/meter-base.png) center 0 no-repeat;
     background-size: 1093px;
+    overflow: hidden;
 }
 
 .round {
@@ -2968,9 +2970,7 @@ table td:nth-child(3) {
     }
 
     .products-list {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        display: block;
         height: 444px;
     }
 
