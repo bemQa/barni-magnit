@@ -1798,7 +1798,7 @@ table td:nth-child(3) {
 
 .main-block {
     position: relative;
-    min-height: 400px;
+    min-height: 410px;
 }
 
 .main-block::before {
@@ -1819,8 +1819,8 @@ table td:nth-child(3) {
     top: -40px;
     left: -100px;
     right: 0;
-    width: 629px;
-    height: 774px;
+    width: 645px;
+    height: 508px;
     margin: auto;
 }
 
@@ -2998,14 +2998,14 @@ table td:nth-child(3) {
     }
 
     .main-block {
-        min-height: 260px;
+        min-height: 270px;
     }
 
     .kv {
         top: 0;
         width: 375px;
-        height: 462px;
-        left: -64px;
+        height: 305px;
+        left: -50px;
         right: -50px;
     }
 
@@ -3014,6 +3014,11 @@ table td:nth-child(3) {
         right: -25px;
         width: 297px;
         height: 163px;
+    }
+
+    .kv-back {
+        background: url(../img/kv-back-mob.png) center 0 no-repeat;
+        background-size: contain;
     }
 
     .steps-block {
