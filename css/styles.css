@@ -3101,7 +3101,7 @@ table td:nth-child(3) {
     }
 
     .star-cute {
-        top: 130px;
+        top: 170px;
         left: -300px;
         width: 140px;
         height: 140px;
@@ -3162,6 +3162,39 @@ table td:nth-child(3) {
         transform: scale(.6) translate(0, 180px);
     }
 
+    .cute-side::after, 
+    .cool-side::after {
+        top: auto;
+        height: 777px;
+        z-index: 2;
+    }
+
+    .barnimeter .arrow {
+        animation: 3s arrow infinite;
+    }
+
+    @keyframes arrow {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(-10deg);
+        }
+
+        50% {
+            transform: rotate(0deg);
+        }
+
+        75% {
+            transform: rotate(10deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
     .cursor-animation {
         position: absolute;
         top: 150px;
@@ -3174,12 +3207,12 @@ table td:nth-child(3) {
 
     .cursor-animation .arrow-left {
         position: absolute;
-        top: 0;
-        left: -80px;
+        top: 20px;
+        left: -120px;
         right: 0;
         margin: auto;
-        width: 22px;
-        height: 18px;
+        width: 56px;
+        height: 40px;
         background: url(../img/arrow-left-anim.svg) center no-repeat;
         background-size: contain;
         transition: all .2s linear;
@@ -3188,12 +3221,12 @@ table td:nth-child(3) {
 
     .cursor-animation .arrow-right {
         position: absolute;
-        top: 0;
+        top: 20px;
         left: 0;
-        right: -80px;
+        right: -120px;
         margin: auto;
-        width: 22px;
-        height: 18px;
+        width: 56px;
+        height: 40px;
         background: url(../img/arrow-right-anim.svg) center no-repeat;
         background-size: contain;
         transition: all .2s linear;
@@ -3273,6 +3306,7 @@ table td:nth-child(3) {
     .cursor-animation-text {
         position: absolute;
         top: 40px;
+        width: 100%;
         font-weight: bold;
         font-size: 16px;
         line-height: 1.2;
