@@ -2421,10 +2421,28 @@ table td:nth-child(3) {
 }
 
 .video-preview {
+    position: relative;
     display: block;
     max-width: 150px;
     width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
     margin: 15px auto 20px;
+}
+
+.video-preview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 42px;
+    height: 43px;
+    background: url(../img/play.png) center no-repeat;
+    background-size: contain;
+    z-index: 1;
 }
 
 .barnidance {
@@ -3060,6 +3078,7 @@ table td:nth-child(3) {
     }
 
     .video-block {
+        position: absolute;
         top: 2258px;
         left: 0;
         right: 0;
