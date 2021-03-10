@@ -2455,63 +2455,79 @@ table td:nth-child(3) {
     margin-top: 14px;
 }
 
-.error-block {
+.error-page {
     position: relative;
-    padding: 50px 0 100px;
+    min-height: 650px;
+    padding: 80px 0 140px;
     z-index: 1;
 }
 
-.error {
-    width: 100%;
-    margin: auto;
+.error-title {
+    font-weight: bold;
+    font-size: 288px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
 }
 
-.error404 {
-    max-width: 529px;
+.error-desc {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 35px;
 }
 
-.error500 {
-    max-width: 592px;
+.error-text {
+    font-size: 21px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
 }
 
-.error + .btn-wrapper {
-    margin-top: 90px;
-}
-
-.cookies-block {
-    padding: 50px 0 100px;
+.cookies-page {
+    padding: 40px 0 60px;
 }
 
 .main-cookie-h1 {
-    position: relative;
-    max-width: 820px;
-    width: 100%;
-    font-style: italic;
-    font-weight: 800;
-    font-size: 45px;
-    line-height: 54px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 34px;
     text-align: center;
-    text-transform: uppercase;
-    margin: 0 auto 45px;
+    color: #fff;
+    margin: 0 auto 40px;
 }
 
-.cookies-block p {
-    font-size: 21px;
-    line-height: 152%;
+.cookies-wrapper {
+    max-width: 980px;
+    width: 100%;
+    margin: auto;
+    padding: 30px 35px 30px 45px;
+    background: #fff;
+    border-radius: 40px;
+}
+
+.cookies-page p {
+    font-size: 18px;
+    line-height: 1.5;
     margin: 40px 0;
 }
 
 .main-cookie-h3 {
-    font-size: 21px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
 .cookie-text-ul {
-    font-size: 21px;
-    line-height: 152%;
-    padding-left: 50px;
-    list-style: none;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 25px;
+    list-style: disc;
 }
 
 .cookie-text-ul li {
@@ -2519,20 +2535,9 @@ table td:nth-child(3) {
     margin: 20px 0;
 }
 
-.cookie-text-ul li::before {
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: -50px;
-    width: 16px;
-    height: 16px;
-    background: url(../img/bullet.svg) center no-repeat;
-    background-size: contain;
-}
-
 .main-cookie-h2 {
-    font-size: 21px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
@@ -3339,45 +3344,49 @@ table td:nth-child(3) {
     }
 
     .main-cookie-h1 {
-        font-size: 35px;
-        line-height: 42px;
-        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 50px;
     }
 
-    .cookies-block p {
-        font-size: 18px;
+    .cookies-wrapper {
+        padding: 15px 25px;
+    }
+
+    .cookies-page p {
+        font-size: 14px;
         margin: 20px 0;
     }
 
     .main-cookie-h3,
     .main-cookie-h2 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .cookie-text-ul {
-        font-size: 18px;
-        padding-left: 30px;
+        font-size: 14px;
     }
 
     .cookie-text-ul li {
         margin: 10px 0;
     }
 
-    .cookie-text-ul li::before {
-        width: 10px;
-        height: 10px;
-        top: 10px;
-        left: -25px;
+    .error-page {
+        min-height: 470px;
     }
 
     .error-title {
-        font-size: 170px;
-        line-height: 202px;
+        font-size: 160px;
+        line-height: 1;
     }
 
     .error-desc {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .error-text {
+        font-size: 18px;
     }
 
     .error-desc + .btn-wrapper {
