@@ -222,4 +222,24 @@ $(document).ready(function () {
     $(".cool-side").click(function() {
         OpenPopup('cool');
     });
+
+    if($('.barnidance-prizes-slider').length) {
+        $('.barnidance-prizes-slider').slick({
+            dots: false,
+            arrow: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
 });

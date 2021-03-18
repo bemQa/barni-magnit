@@ -44,11 +44,11 @@
 				<a href="https://drive.google.com/file/d/1jcxaunl2jSgOoJDKjAIhEH_MyHxvIxOA/view" class="video-preview" target="_blank">
 					<img src="img/video-prev.png" alt="">
 				</a>
-				<div class="video-block-title">Получай больше <br>призов в челлендже</div>
-				<div class="barnidance">
+				<div class="video-block-title desktop-visible">Получай больше <br>призов в челлендже</div>
+				<div class="barnidance desktop-visible">
 					<img srcset="img/barnidance.png 1x, img/barnidance@2x.png 2x" alt="">
 				</div>
-				<div class="video-socials">
+				<div class="video-socials desktop-visible">
 					<a href="#!">
 						<img src="img/ig.png" alt="">
 					</a>
@@ -105,21 +105,26 @@
 								<img srcset="img/prize1.png 1x, img/prize1@2x.png 2x" alt="">
 							</div>
 							<div class="prize-title">Ежедневно</div>
-							<div class="prize-text">300 и 500 баллов на карту <br>Магнит и мишки Барни</div>
+							<div class="prize-text">
+								<p>300 бонусов на карту Магнит</p>
+ 								<p>500 бонусов на карту Магнит</p>
+ 								<p>Игрушка Барни</p>  
+							</div>
 						</div>
 						<div class="prize prize2">
 							<div class="prize-img">
 								<img srcset="img/prize2.png 1x, img/prize2@2x.png 2x" alt="">
 							</div>
-							<div class="prize-title">Еженедельно</div>
-							<div class="prize-text">100000 баллов на карту <br>Магнит </div>
+							<div class="prize-title">Главный приз</div>
+							<div class="prize-text">100000 баллов на карту Магнит <br>и поездка на фабрику Барни <br>со звездой!</div>
 						</div>
 						<div class="prize prize3">
 							<div class="prize-img">
 								<img srcset="img/prize3.png 1x, img/prize3@2x.png 2x" alt="">
 							</div>
-							<div class="prize-title">Главный приз</div>
-							<div class="prize-text">Поездка на фабрику Барни <br>со звездой!</div>
+							<div class="prize-title"><img srcset="img/prize-barnidance-title.png 1x, img/prize-barnidance-title@2x.png 2x" alt=""></div>
+							<div class="prize-text">Участвуй в челлендже <br>и выигрывай ещё больше призов!</div>
+							<a href="#barnidance-prizes" class="prize-btn anchor">Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -170,6 +175,55 @@
 						<div class="round round15"></div>
 						<div class="round round16"></div>
 						<div class="round round17"></div>
+					</div>
+				</div>
+			</section>
+			<section id="barnidance-prizes" class="barnidance-prizes-block">
+				<div class="container">
+					<div class="barnidance-title">
+						<img src="img/barnidance-title.png" alt="">
+					</div>
+					<div class="main-subtitle">Участвуй в челлендже <br class="mobile-visible">в Instagram <br class="desktop-visible">и Likee <br class="mobile-visible">и выигрывай крутые призы.</div>
+					<div class="barnidance-challenge-link-wrapper">
+						<a href="#!" class="barnidance-challenge-link pop-op" data-popup="barnidance-challenge">Участники челленджа</a>
+					</div>
+					<div class="barnidance-prizes-slider">
+						<div class="barnidance-prize prize1">
+							<div class="barnidance-prize-wrapper">
+								<div class="barnidance-prize-img">
+									<img srcset="img/barnidance-prizes/iphone.png 1x, img/barnidance-prizes/iphone@2x.png 2x" alt="">
+								</div>
+								<div class="barnidance-prize-title">Смартфон</div>
+							</div>
+						</div>
+						<div class="barnidance-prize prize2">
+							<div class="barnidance-prize-wrapper">
+								<div class="barnidance-prize-img">
+									<img srcset="img/barnidance-prizes/cinemood.png 1x, img/barnidance-prizes/cinemood@2x.png 2x" alt="">
+								</div>
+								<div class="barnidance-prize-title">Портативный <br>кинотеатр</div>
+							</div>
+						</div>
+						<div class="barnidance-prize prize3">
+							<div class="barnidance-prize-wrapper">
+								<div class="barnidance-prize-img">
+									<img srcset="img/barnidance-prizes/nintendo.png 1x, img/barnidance-prizes/nintendo@2x.png 2x" alt="">
+								</div>
+								<div class="barnidance-prize-title">Портативная <br>игровая консоль</div>
+							</div>
+						</div>
+						<div class="barnidance-prize prize4">
+							<div class="barnidance-prize-wrapper">
+								<div class="barnidance-prize-img">
+									<img srcset="img/barnidance-prizes/ipad.png 1x, img/barnidance-prizes/ipad@2x.png 2x" alt="">
+								</div>
+								<div class="barnidance-prize-title">Планшет</div>
+							</div>
+						</div>
+					</div>
+					<div class="barnidance-challenge-buttons">
+						<a href="#!" class="barnidance-challenge-btn ig" target="_blank">Челлендж <br>в Instagram</a>
+						<a href="#!" class="barnidance-challenge-btn lik" target="_blank">Челлендж <br>в Likee</a>
 					</div>
 				</div>
 			</section>
@@ -368,6 +422,111 @@
                 </div>
             </div>
 		</div>
+		<div id="barnidance-challenge" class="popup barnidance-popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.388 3.56723C16.204 2.75117 16.204 1.4281 15.388 0.612042C14.5719 -0.20402 13.2488 -0.204008 12.4328 0.612042L8 5.04482L3.56723 0.612042C2.75116 -0.20402 1.42809 -0.204008 0.612042 0.612042C-0.204008 1.42809 -0.20402 2.75116 0.612042 3.56723L5.04482 8L0.612042 12.4328C-0.204008 13.2488 -0.20402 14.5719 0.612042 15.388C1.4281 16.204 2.75117 16.204 3.56723 15.388L8 10.9552L12.4328 15.388C13.2488 16.204 14.5719 16.204 15.388 15.388C16.204 14.5719 16.204 13.2488 15.388 12.4328L10.9552 8L15.388 3.56723Z" fill="#2EC5F4"/>
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">Участники челленджа #барнидэнс</div>
+                    <div class="table-wrapper barnidance-table">
+                    	<table>
+                    		<thead>
+                    			<tr>
+	                    			<th>#</th>
+	                    			<th>Участник</th>
+	                    			<th class="desktop-visible">Ссылка на видео</th>
+	                    		</tr>
+                    		</thead>
+                    		<tbody>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link likee" target="_blank">baby-cat-fluffy-cutbaby-cat-fluffy-cut</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    			<tr>
+                    				<td>1</td>
+                    				<td>
+                    					<a href="#!" class="barnidance-winner-link link ig" target="_blank">axgyph</a>
+                    					<a href="#!" class="barnidance-video-link link mobile-visible" target="_blank">смотреть видео</a>
+                    				</td>
+                    				<td class="desktop-visible"><a href="#!" class="barnidance-video-link link">смотреть видео</a></td>
+                    			</tr>
+                    		</tbody>
+                    	</table>
+                    </div>
+                </div>
+            </div>
+		</div>
 	</div>
 
 	<script src="libs/jquery-3.5.1.min.js"></script>
@@ -376,6 +535,7 @@
 	<script src="libs/scrollbar/jquery.scrollbar.min.js"></script>
 	<script src="libs/jquery.inputmask.min.js"></script>
 	<script src="libs/jquery.countdown.min.js"></script>
+	<script src="libs/slick.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

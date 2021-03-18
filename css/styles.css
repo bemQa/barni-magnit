@@ -469,6 +469,112 @@ body .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     text-align: left;
 }
 
+/* Slider */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
 /**/
 
 html,
@@ -1992,7 +2098,7 @@ table td:nth-child(3) {
     margin: 0 auto;
 }
 
-.prize2 {
+.prize.prize2 {
     margin-top: 45px;
 }
 
@@ -2018,6 +2124,43 @@ table td:nth-child(3) {
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+}
+
+.prize-text p {
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.prize-text p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 13px;
+    height: 13px;
+    background: url(../img/star.svg) center no-repeat;
+    background-size: contain;
+}
+
+.prize-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 36px;
+    margin: 15px auto 0;
+    padding: 3px 0;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #073592;
+    border-radius: 30px;
 }
 
 .barnimeter-block {
@@ -2539,6 +2682,207 @@ table td:nth-child(3) {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+
+.barnidance-prizes-block {
+    min-height: 640px;
+    padding: 70px 0 60px;
+    background: url(../img/bg-barnidance.jpg) center 0 no-repeat;
+    background-size: cover;
+}
+
+.barnidance-title {
+    max-width: 322px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+.barnidance-prizes-block .main-subtitle {
+    color: #fff;
+}
+
+.barnidance-challenge-link-wrapper {
+    text-align: center;
+}
+
+.barnidance-challenge-link {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFE600;
+}
+
+.barnidance-challenge-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #FFE600;
+    transition: .2s linear;
+}
+
+.barnidance-challenge-link:hover::after {
+    width: 0;
+}
+
+.barnidance-prizes-slider {
+    margin-bottom: 50px;
+}
+
+.barnidance-prizes-slider * {
+    outline: none;
+}
+
+.barnidance-prize-wrapper {
+    max-width: 190px;
+    width: 100%;
+    margin: auto;
+}
+
+.barnidance-prize.prize2 .barnidance-prize-wrapper,
+.barnidance-prize.prize3 .barnidance-prize-wrapper {
+    margin-top: 35px;
+}
+
+.barnidance-prize-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 155px;
+    margin: 0 auto 10px;
+}
+
+.barnidance-prize-title {
+    font-size: 21px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+}
+
+.barnidance-challenge-buttons {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 440px;
+    width: 100%;
+    margin: auto;
+}
+
+.barnidance-challenge-btn {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 60px;
+    padding: 10px 10px 10px 30px;
+    background: #FFE600;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.barnidance-challenge-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.barnidance-challenge-btn.ig::before {
+    background: url(../img/instagram-logo.png) center no-repeat;
+    background-size: 40px;
+}
+
+.barnidance-challenge-btn.lik::before {
+    background: url(../img/likee-logo.png) center no-repeat;
+    background-size: 27px;
+}
+
+.barnidance-challenge-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    width: 10px;
+    height: 15px;
+    margin: auto;
+    background: url(../img/go-to.svg) center no-repeat;
+    background-size: contain;
+    transition: all .2s linear;
+}
+
+.barnidance-challenge-btn:hover::after {
+    right: 10px;
+}
+
+.barnidance-popup .popup__wrap,
+.barnidance-popup .popup__inner {
+    max-width: 560px;
+}
+
+.barnidance-table {
+    max-width: 490px;
+    margin: 30px auto;
+}
+
+.barnidance-table table {
+    text-align: left;
+}
+
+.barnidance-table table td:nth-child(1) {
+    min-width: 50px;
+    text-align: left;
+}
+
+.barnidance-winner-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+    padding-left: 30px;
+}
+
+.barnidance-winner-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.barnidance-winner-link.ig::before {
+    background: url(../img/ig-icon.png) center no-repeat;
+    background-size: contain;
+}
+
+.barnidance-winner-link.likee::before {
+    background: url(../img/likee-icon.png) center no-repeat;
+    background-size: contain;
+}
+
+.barnidance-video-link {
+    color: #2EC5F4;
 }
 
 @media (max-width: 1366px) {
@@ -3068,7 +3412,7 @@ table td:nth-child(3) {
 
     .prizes-block {
         padding-top: 60px;
-        padding-bottom: 470px;
+        padding-bottom: 300px;
     }
 
     .prizes-block::before {
@@ -3089,11 +3433,11 @@ table td:nth-child(3) {
 
     .video-block {
         position: absolute;
-        top: 2258px;
+        top: 2400px;
         left: 0;
         right: 0;
         width: 300px;
-        height: 470px;
+        height: 260px;
         margin: auto;
         padding: 25px 30px;
         border-radius: 30px;
@@ -3396,6 +3740,80 @@ table td:nth-child(3) {
     .error-text {
         font-size: 16px;
         line-height: 18px;
+    }
+
+    .barnidance-prizes-block {
+        padding: 60px 0 40px;
+    }
+
+    .barnidance-title {
+        max-width: 258px;
+    }
+
+    .barnidance-prizes-slider {
+        margin: 50px auto 40px;
+    }
+
+    .barnidance-prize.prize2 .barnidance-prize-wrapper, 
+    .barnidance-prize.prize3 .barnidance-prize-wrapper {
+        margin: auto;
+    }
+
+    .barnidance-prizes-slider .slick-arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 19px;
+        height: 34px;
+        margin: auto;
+        font-size: 0;
+    }
+
+    .barnidance-prizes-slider .slick-prev {
+        left: 0;
+        background: url(../img/arrow-left.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .barnidance-prizes-slider .slick-next {
+        right: 0;
+        background: url(../img/arrow-right.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .barnidance-challenge-buttons {
+        max-width: 280px;
+    }
+
+    .barnidance-challenge-btn {
+        width: 120px;
+        height: 105px;
+        padding: 56px 18px 10px;
+    }
+
+    .barnidance-challenge-btn::before {
+        top: 10px;
+        bottom: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .barnidance-challenge-btn::after {
+        top: 23px;
+        bottom: auto;
+    }
+
+    .barnidance-popup .popup__wrap, 
+    .barnidance-popup .popup__inner {
+        max-width: 300px;
+    }
+
+    .barnidance-table table td {
+        vertical-align: top;
+    }
+
+    .barnidance-winner-link {
+        margin-bottom: 10px;
     }
 }
 
