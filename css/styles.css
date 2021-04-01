@@ -2702,15 +2702,28 @@ table td:nth-child(3) {
 }
 
 .barnidance-challenge-link-wrapper {
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 .barnidance-challenge-link {
     position: relative;
+    display: block;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
     color: #FFE600;
+    margin: 0 20px;
+}
+
+.winners-barnidance-challenge-link {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    right: -650px;
+    width: 210px;
+    margin: auto;
 }
 
 .barnidance-challenge-link::after {
@@ -3814,6 +3827,11 @@ table td:nth-child(3) {
 
     .barnidance-winner-link {
         margin-bottom: 10px;
+    }
+
+    .winners-barnidance-challenge-link {
+        top: 720px;
+        right: 0;
     }
 }
 
